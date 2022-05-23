@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+			<title>用户注册</title>
+		</head>
+		<style type="text/css">
+			fieldset{
+				width: 35%;
+				margin: 0 auto;
+			}
+			legend{
+				font-family : "黑体";
+				font-size : 30px;
+				color : blue;
+			}
+		</style>
+	<body>
+		<fieldset>
+		<legend>用户注册</legend>
+			<!-- 正确设置form标签的属性 -->
+			<form action="/register" enctype="multipart/form-data"  method="post" >
+			   <p>
+				   <label><span>姓名:</span>
+				   <input id="name" type="text" name="name"
+						  placeholder="输入姓名" />
+				   </label>
+			   </p>
+			   <p>
+				   <label><span>密码:</span>
+				   <input name="password" type="password" />
+				   </label>
+			   </p>
+			   <p>
+				   <label><span>文件:</span>
+				   <input type="file" name="head_img" multiple="multiple" 
+					 required="required"/><br />
+				   </label>* 图片文件不能大于1M
+			   </p>
+				<p>
+					<label><span>&nbsp;</span>
+					<input type="submit" value="提交" />
+					</label>
+				</p>
+			</form>
+		</fieldset>
+	</body>
+</html>

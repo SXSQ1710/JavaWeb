@@ -1,0 +1,43 @@
+<HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/BookSystem.css">
+    <script type="text/javascript" src="./js/BookSystem.js"></script>
+    <title>商品后台管理系统</title>
+</head>
+<body>
+<div id="div_container">
+    <div id="div_table">
+        <h1 >修改商品</h1>
+		<div id="div_get">
+			<a class="action" th:onclick="javascript:back()">返回上一级</a>
+		</div>
+        <div style="margin: 2% 30% 2% 30%;" >
+            <form th:action="@{/BookSystem}" method="post">
+                <input type="hidden" name="operate" value="aletBook"/>
+                <td><input type="hidden" name="ibsn" th:value="${aBook.isbn}"></td>
+                <table id="book_info" align="center">
+                    <tr>
+                        <th>名称:</th>
+                        <td class="info"><input type="text" name="name" th:value="${aBook.name}"></td>
+                    </tr>
+                    <tr>
+                        <th>种类:</th>
+                        <td class="info"><input type="text" name="sort" th:value="${aBook.sort}"></td>
+                    </tr>
+                    <tr>
+                        <th>价格:</th>
+                        <td class="info"><input type="text" name="price" th:value="${aBook.price}"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" value="修改" /></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

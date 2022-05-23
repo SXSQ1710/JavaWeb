@@ -1,0 +1,72 @@
+body{
+	margin:0;
+	padding:0;
+	background-color:#808080;
+}
+
+#div_container{
+	width:80%;
+	height:100%;
+	border:0px solid blue;
+	margin-left:10%;
+	float:left;
+	background-color: honeydew;
+	border-radius:8px;
+}
+
+#div_table h1{
+	text-align: center; 
+	color: dimgrey;
+	font-size: 40px;
+}
+
+#div_get{
+	text-align: center;
+}
+
+#div_info{
+	width: 80%;
+	margin: 2% 10% 2% 10%;
+}
+
+#book_info{
+	width: 100%;
+}
+
+#book_info,#book_info th{
+	border:1px solid gray;
+	border-collapse:collapse;
+	text-align:center;
+	font-size:16px;
+	font-family:"黑体";
+	line-height: 30px;
+}
+
+.info{
+	border:1px solid gray;
+	border-collapse:collapse;
+	text-align:center;
+	font-size:16px;
+	font-family:"黑体";
+	line-height: 30px;
+}
+
+.img{
+	width:24px;
+	height:24px;
+}
+
+.imgtd{
+	border:1px solid gray;
+	border-collapse:collapse;
+	width: 10%;
+}
+
+.action{
+	color: #0000ff;
+	text-decoration: underline;
+}
+
+#select{
+	width: 50%;
+}

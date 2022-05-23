@@ -1,0 +1,55 @@
+<HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/BookSystem.css">
+    <script type="text/javascript" src="js/BookSystem.js"></script>
+    <title>商品后台管理系统</title>
+</head>
+<body>
+<div id="div_container">
+    <div id="div_table">
+        <h1>搜索结果</h1>
+		<div id="div_get" style="margin-bottom: 2%;">
+			<a class="action" th:onclick="javascript:back()" >返回上一级</a>
+		</div>
+		<div id="div_get">
+			<form th:action="BookSystem.do" method="post" >
+				<input type="hidden" name="operate" value="GetABook"/>
+				书籍编号:
+				<input type="text" name="isbn" value="Isbn编号"/><br/>
+				书籍名称:
+				<input type="text" name="name" value="name"/><br/><br/>
+				<input type="radio" name="isbnorname" value="radioIsbn"/>书籍编号
+				<input type="radio" name="isbnorname" value="radioName"/>书籍名称
+				<input type="submit" value="查询"/>
+			</form>
+		</div>
+        <div id="div_info">
+            <table id="book_info" align="center">
+                <tr>
+                    <th>ISBN</th>
+                    <th>名称</th>
+                    <th>种类</th>
+                    <th>单价</th>
+                    <th>修改/删除</th>
+                </tr>
+                <tr th:if="${#lists.isEmpty(session.aBook)}" >
+                    <td colspan="6">对不起，无对应结果！</td>
+                </tr>
+                <tr th:unless="${#lists.isEmpty(session.aBook)}" th:each="Book : ${session.aBook}" >
+                    <td class="info" th:text="${Book.isbn}">Isbn</td>
+                    <td class="info" th:text="${Book.name}">Name</td>
+                    <td class="info" th:text="${Book.sort}">Sort</td>
+                    <td class="info" th:text="${Book.price}">Price</td>
+                    <td class="imgtd"><img src="./img/修改.jpeg" class="img" th:onclick="javascript:aletBook([[${Book.isbn}]])">
+                        <img src="./img/删除.jpeg" class="img" th:onclick="javascript:deleBook([[${Book.isbn}]])"></td>
+                </tr>
+            </table>
+            <a class="action" th:onclick="javascript:add()" style="border:0px solid blue;margin-top:6px; float: right; font-size: 20px; ">添加新库存记录</a>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

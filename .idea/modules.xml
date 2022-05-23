@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MVCAndIOC/MVCAndIOC.iml" filepath="$PROJECT_DIR$/MVCAndIOC/MVCAndIOC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Test/Test.iml" filepath="$PROJECT_DIR$/Test/Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/class/class.iml" filepath="$PROJECT_DIR$/class/class.iml" />
+      <module fileurl="file://$PROJECT_DIR$/homework/homework.iml" filepath="$PROJECT_DIR$/homework/homework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaweb.iml" filepath="$PROJECT_DIR$/javaweb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/listerTest/listerTest.iml" filepath="$PROJECT_DIR$/listerTest/listerTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/online-exam/online-exam.iml" filepath="$PROJECT_DIR$/online-exam/online-exam.iml" />
+      <module fileurl="file://$PROJECT_DIR$/online-vote/online-vote.iml" filepath="$PROJECT_DIR$/online-vote/online-vote.iml" />
+      <module fileurl="file://$PROJECT_DIR$/onlineVote-Redirect/onlineVote-Redirect.iml" filepath="$PROJECT_DIR$/onlineVote-Redirect/onlineVote-Redirect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sessionTest/sessionTest.iml" filepath="$PROJECT_DIR$/sessionTest/sessionTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springMVC/springMVC.iml" filepath="$PROJECT_DIR$/springMVC/springMVC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_Demo01/spring_Demo01.iml" filepath="$PROJECT_DIR$/spring_Demo01/spring_Demo01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_Demo02/spring_Demo02.iml" filepath="$PROJECT_DIR$/spring_Demo02/spring_Demo02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/teacher/teacher.iml" filepath="$PROJECT_DIR$/teacher/teacher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thymeleaf/thymeleaf.iml" filepath="$PROJECT_DIR$/thymeleaf/thymeleaf.iml" />
+    </modules>
+  </component>
+</project>

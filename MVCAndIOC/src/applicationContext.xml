@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans>
+    <!-- 这个bean标签的作用是 将来servletpath中涉及的名字对应的是book，那么就要BookController这个类来处理 -->
+    <bean id="BookSystem" class="cn.com.huyi.controller.BookController" />
+    <bean id="UserController" class="cn.com.huyi.controller.UserController"/>
+</beans>

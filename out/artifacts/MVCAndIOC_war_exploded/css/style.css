@@ -1,0 +1,45 @@
+.div_login{
+	width: 35%;
+	margin: auto;
+}
+
+#form{
+	margin:5%;
+	float: top;
+}
+
+#login-top{
+	background-color: #E1E5EA;
+	padding: 5% 10% 5% 10%;
+	border-radius: 20px 20px 0px 0px ;
+	height: 150px;
+}
+
+#login-bottom{
+	background-color: coral;
+	padding: 40px 60px;
+	border-radius: 0px 0px 20px 20px ;
+
+	text-align: right;
+	height: 50px;
+}
+
+#body{
+	padding: 10%;
+}
+
+#ok{
+	padding-top: 5%;
+	text-align: right;
+	float: right;
+}
+
+#Text{
+	float: left;
+	width: 30%;
+}
+
+#input{
+	float: left;
+	width: 70%;
+}

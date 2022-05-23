@@ -1,0 +1,14 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<Context reloadable = "true">-->
+<!--    <Resource-->
+<!--        auth="Container"-->
+<!--        name="jdbc/mysql"-->
+<!--        type="javax.sql.DataSource"-->
+<!--        maxTotal="4"-->
+<!--        maxIdle="2"-->
+<!--        driverClassName="com.mysql.jdbc.Driver"-->
+<!--        url="jdbc:mysql://localhost:3306/booksystem?&amp;useSSL=false&amp;serverTimezone=UTC"-->
+<!--        user="root"-->
+<!--        password="13824101958"-->
+<!--        maxWaitMillis="5000"/>-->
+<!--</Context>-->

@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>简单测试</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+    <fieldset>
+        <legend>请回答下面的问题</legend>
+		<form action="/online-exam/simple-test" method="POST">
+			<p>1.windows操作系统是哪个公司的产品？
+				<input type="radio" name="question1" value="1" />Apple公司
+				<input type="radio" name="question1" value="2" />IBM公司
+				<input type="radio" name="question1" value="3" /><Microsoft公司></Microsoft公司>
+			</p>
+			
+			<p>2.编写servlet应该继承哪个类？
+				<input type="text" name="question2" value="" />
+			</p>
+			
+			<p>3.下面的程序设计语言，哪些是面向对象的？
+				<input type="checkbox" name="question3" value="1" />Java语言
+				<input type="checkbox" name="question3" value="2" />C语言
+				<input type="checkbox" name="question3" value="3" />C++语言
+			</p>
+			
+			<p>4.下图是哪种编程语言的徽标？</h4>
+				<input type="radio" name="question4" value="1" />Java
+				<input type="radio" name="question4" value="2" />C
+				<input type="radio" name="question4" value="3" />Python
+			</p>
+				<img src="img/Java.png" alt="徽标" width="60px" height="60px">
+			
+
+			<p> 交卷请单击:<input type="submit" value="交卷">
+				重答请单击:	<input type="reset" value="重答">
+			</p>
+		</form>
+	</fieldset>
+</body>
+
+</html>

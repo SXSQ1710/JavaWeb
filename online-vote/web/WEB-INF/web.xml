@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                      http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+  version="4.0"
+  metadata-complete="true">
+
+
+  <servlet>
+  	<servlet-name>VoteServlet</servlet-name>
+	<servlet-class>edu.gdut.imis.vote.service.VoteServlet</servlet-class>
+	<init-param>
+		<param-name>fileName</param-name>
+		<param-value>D:/javaide/javaweb/online-vote/web/vote.dd</param-value>
+	</init-param>
+   </servlet>
+    <servlet-mapping>
+  	<servlet-name>VoteServlet</servlet-name>
+	<url-pattern>/vote</url-pattern>
+  </servlet-mapping>
+  
+ </web-app>

@@ -1,0 +1,54 @@
+<HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/BookSystem.css">
+    <script type="text/javascript" src="./js/BookSystem.js"></script>
+    <title>商品后台管理系统</title>
+</head>
+<body>
+<div id="div_container">
+    <div id="div_table">
+        <h1 >添加商品</h1>
+		<div id="div_get">
+			<a class="action" th:onclick="javascript:back()">返回上一级</a>
+		</div>
+        <div style="margin: 2% 30% 2% 30%;" >
+			<form action="BookSystem" method="post">
+				<input type="hidden" name="operate" value="addBook"/>
+				<table id="book_info" align="center">
+					<tr>
+						<th>ISBN:</th>
+						<td class="imgtd"><input type="text" name="ibsn"></td>
+					</tr>
+					<tr>
+						<th>名称:</th>
+						<td class="imgtd"><input type="text" name="name"></td>
+					</tr>
+					<tr>
+						<th>种类:</th>
+						<!-- <td class="imgtd"><input type="text" name="sort"></td> -->
+						<td>
+							--
+							<select name="sort" id="select"> 
+								<option value="">请选择</option>
+								<option th:each="item:${AllSort}" th:value="${item}" th:text="${item}"></option>
+							</select>
+							--
+						</td>
+					</tr>
+					<tr>
+						<th>价格:</th>
+						<td class="imgtd"><input type="text" name="price"></td>
+					</tr>
+					<tr>
+						<td colspan="2"><input type="submit" value="添加" /></td>
+					</tr>
+				</table>
+			</form>
+        </div>
+		
+    </div>
+</div>
+</body>
+</html>
